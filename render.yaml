@@ -1,6 +1,6 @@
 services:
 - type: pserv
-  name: mysql
+  name: mysql-render-eq3f:3306
   plan: standard
   env: docker
   autoDeploy: false
@@ -17,8 +17,8 @@ envVarGroups:
   - key: MYSQL_DATABASE
     value: mysql
   - key: MYSQL_USER
-    value: mysql
+    value: chen0122
   - key: MYSQL_PASSWORD
-    generateValue: true
+    value: 840122
   - key: MYSQL_ROOT_PASSWORD
     generateValue: true
