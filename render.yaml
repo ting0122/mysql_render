@@ -1,6 +1,6 @@
 services:
 - type: pserv
-  name: mysql_render
+  name: mysql
   plan: standard
   env: docker
   autoDeploy: false
@@ -15,6 +15,10 @@ envVarGroups:
 - name: mysql
   envVars:
   - key: MYSQL_DATABASE
-    value: smartiot
+    value: mysql
+  - key: MYSQL_USER
+    value: mysql
+  - key: MYSQL_PASSWORD
+    generateValue: true
   - key: MYSQL_ROOT_PASSWORD
-    value: root
+    generateValue: true
